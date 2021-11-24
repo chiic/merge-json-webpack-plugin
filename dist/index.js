@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MergeI18nJSON = void 0;
 class MergeI18nJSON {
     constructor(options) {
         this.options = options;
@@ -31,3 +34,4 @@ class MergeI18nJSON {
         return source;
     }
 }
+exports.MergeI18nJSON = MergeI18nJSON;

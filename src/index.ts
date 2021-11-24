@@ -1,10 +1,10 @@
 
-interface Options {
+export interface Options {
     reg: string[];
     outDir?: string;
 }
 
-class MergeI18nJSON {
+export class MergeI18nJSON {
     constructor(private options: Options) { }
     apply(complier) {
         complier.hooks.emit.tapAsync('MergeI18nJSON', (compilation, callback) => {
